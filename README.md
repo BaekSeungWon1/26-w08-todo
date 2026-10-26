@@ -21,8 +21,7 @@
 
 ## 실행 방법
 
-<!-- 배포 링크 (GitHub Pages) -->
-
+(https://BaekSeungWon1.github.io/26-w08-todo/)
 ## 커스터마이징한 부분
 
 <!-- dev에서 보완한 내용, PRD 기본 요구사항 외에 직접 추가하거나 바꾼 부분을 적어주세요. -->

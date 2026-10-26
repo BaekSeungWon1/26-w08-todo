@@ -1,0 +1,140 @@
+:root {
+  color-scheme: light;
+  --page-background: #f5f7fb;
+  --accent: #6257e8;
+  --accent-dark: #5045d4;
+  --soft-border: #e9ebf3;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 0, rgba(98, 87, 232, 0.1), transparent 42rem),
+    var(--page-background);
+  color: #24263a;
+}
+
+.todo-shell {
+  max-width: 860px;
+}
+
+.todo-card {
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.form-control {
+  min-width: 0;
+  border-color: #dfe2ec;
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(98, 87, 232, 0.16);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: var(--accent-dark);
+  --bs-btn-hover-border-color: var(--accent-dark);
+  --bs-btn-active-bg: var(--accent-dark);
+  --bs-btn-active-border-color: var(--accent-dark);
+}
+
+.progress-panel {
+  background: #f7f6ff;
+}
+
+.progress-value {
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+.progress {
+  height: 0.65rem;
+  background-color: #e6e3ff;
+}
+
+.progress-bar {
+  background-color: var(--accent);
+  transition: width 220ms ease;
+}
+
+.filter-group .btn {
+  min-width: 4.25rem;
+}
+
+.filter-group .btn.active {
+  color: #fff;
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.todo-item {
+  gap: 0.75rem;
+  padding: 1rem 0.25rem;
+  border-color: var(--soft-border);
+}
+
+.todo-checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex: 0 0 auto;
+  margin-top: 0.1rem;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.todo-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.todo-item.is-completed .todo-text {
+  color: #8a8d9e;
+  text-decoration: line-through;
+  opacity: 0.72;
+}
+
+.todo-delete {
+  flex: 0 0 auto;
+}
+
+.empty-state {
+  background-color: #fafaff;
+  border: 1px dashed #dfe0ef;
+}
+
+.empty-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--accent);
+  background-color: #eeecff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+  .todo-card {
+    border-radius: 1.15rem;
+  }
+
+  .todo-card .card-body {
+    padding: 1.35rem !important;
+  }
+
+  .input-group-lg > .form-control,
+  .input-group-lg > .btn {
+    font-size: 1rem;
+  }
+}
